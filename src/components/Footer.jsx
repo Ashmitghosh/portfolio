@@ -13,8 +13,8 @@ const Footer = () => {
               href={link.href}
               target="_blank"
               rel='noopener noreferrer'
-              className='text-xl' // Add styling as needed
-              whileHover={{ scale: 1.2, rotate: 15 }} // Adjust these values as needed
+              className='text-xl' 
+              whileHover={{ scale: 1.2, rotate: 15 }} 
               transition={{ type: 'spring', stiffness: 300 }}
             >
               {link.icon}

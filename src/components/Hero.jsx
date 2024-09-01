@@ -1,9 +1,16 @@
 import React from 'react';
 import { HERO } from "../constants";
 import { motion } from 'framer-motion';
-import pic from '../assets/pic.jpeg'; // Ensure this path is correct
+import pic from '../assets/pic.jpeg'; 
 
 const Hero = () => {
+  const handleDownloadCv = () => {
+    const link = document.createElement('a');
+    link.href = '/resume_AshmitGhosh.pdf'; 
+    link.download = 'AshmitGhosh.pdf'; 
+    link.click();
+  };
+
   return (
     <section className='flex min-h-screen items-center justify-center px-4 md:px-8'>
       <div className='flex flex-col md:flex-row items-center md:items-start w-full max-w-screen-xl'>
@@ -35,6 +42,7 @@ const Hero = () => {
           <motion.button
             type="button"
             className="text-white bg-purple-700 hover:bg-purple-800 focus:outline-none focus:ring-4 focus:ring-purple-300 font-medium rounded-full text-lg px-10 py-5 text-center mb-2 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+            onClick={handleDownloadCv}
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.5, type: 'spring', stiffness: 50, delay: 0.6 }}
@@ -44,7 +52,7 @@ const Hero = () => {
         </div>
         <div className='w-full md:w-1/2 flex justify-center items-center mt-16 md:mt-0 md:ml-20'>
           <motion.img
-            src={pic} // Ensure this path is correct
+            src={pic}
             alt="Ashmit Ghosh"
             className='rounded-4xl'
             height={400}

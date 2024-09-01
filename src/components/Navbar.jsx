@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaTimes, FaBars } from 'react-icons/fa';  // Correct import for FaBars
+import { FaTimes, FaBars } from 'react-icons/fa';  
 import { NAVIGATION_LINKS } from '../constants';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -38,8 +38,8 @@ const Navbar = () => {
                     className='text-2xl text-white hover:text-yellow-500'
                     href={item.href}
                     onClick={(e) => handleLinkClick(e, item.href)}
-                    whileHover={{ scale: 1.1, color: '#f59e0b' }} // Hover effect: scale up and change color
-                    transition={{ duration: 0.3 }} // Animation duration
+                    whileHover={{ scale: 1.1, color: '#f59e0b' }} 
+                    transition={{ duration: 0.3 }}
                   >
                     {item.label}
                   </motion.a>
@@ -76,8 +76,8 @@ const Navbar = () => {
                     className='block w-full text-lg text-white hover:text-yellow-500'
                     href={item.href}
                     onClick={(e) => handleLinkClick(e, item.href)}
-                    whileHover={{ scale: 1.1, color: '#f59e0b' }} // Hover effect
-                    transition={{ duration: 0.3 }} // Animation duration
+                    whileHover={{ scale: 1.1, color: '#f59e0b' }} 
+                    transition={{ duration: 0.3 }} 
                   >
                     {item.label}
                   </motion.a>

@@ -87,7 +87,7 @@ const Contact = () => {
             name="message"
             value={formData.message}
             onChange={handleChange}
-            className="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 transition duration-300"
+            className="w-full text-black  p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 transition duration-300"
           ></textarea>
           {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
         </div>
